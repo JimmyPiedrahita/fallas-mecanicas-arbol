@@ -1,0 +1,69 @@
+{
+  "valor": "¿Qué vehículo tienes?",
+  "hijos": [
+    {
+      "valor": "Motocicleta",
+      "hijos": [
+        {
+          "valor": "Al intentar encender",
+          "hijos": [
+            {
+              "valor": "No hace nada (Muerta)",
+              "hijos": [{ "valor": "Falla eléctrica general: Batería, fusible o switch", "es_diagnostico": true }]
+            },
+            {
+              "valor": "Hace 'clic, clic'",
+              "hijos": [{ "valor": "Batería baja o relé de arranque dañado", "es_diagnostico": true }]
+            },
+            {
+              "valor": "Gira pero no prende",
+              "hijos": [{ "valor": "Falta gasolina, carburador sucio o bujía", "es_diagnostico": true }]
+            }
+          ]
+        },
+        {
+          "valor": "En movimiento",
+          "hijos": []
+        },
+        {
+          "valor": "Frenos y manejo",
+          "hijos": []
+        }
+      ]
+    },
+    {
+      "valor": "Automóvil",
+      "hijos": [
+        {
+          "valor": "Al intentar encender",
+          "hijos": []
+        },
+        {
+          "valor": "Ruidos en movimiento",
+          "hijos": []
+        },
+        {
+          "valor": "Luces del tablero",
+          "hijos": []
+        },
+        {
+          "valor": "Fugas en el piso",
+          "hijos": [
+            {
+              "valor": "Mancha negra resbaladiza",
+              "hijos": [{ "valor": "Fuga de aceite de motor", "es_diagnostico": true }]
+            },
+            {
+              "valor": "Agua transparente sin olor",
+              "hijos": [{ "valor": "Normal: Condensación del Aire Acondicionado", "es_diagnostico": true }]
+            },
+            {
+              "valor": "Mancha de color brillante",
+              "hijos": [{ "valor": "Fuga de anticongelante. ¡Riesgo de sobrecalentamiento!", "es_diagnostico": true }]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
