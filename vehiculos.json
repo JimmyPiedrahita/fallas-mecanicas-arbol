@@ -9,25 +9,87 @@
           "hijos": [
             {
               "valor": "No hace nada (Muerta)",
-              "hijos": [{ "valor": "Falla eléctrica general: Batería, fusible o switch", "es_diagnostico": true }]
+              "hijos": [
+                {
+                  "valor": "Falla eléctrica general: Batería, fusible o switch",
+                  "es_diagnostico": true
+                }
+              ]
             },
             {
               "valor": "Hace 'clic, clic'",
-              "hijos": [{ "valor": "Batería baja o relé de arranque dañado", "es_diagnostico": true }]
+              "hijos": [
+                {
+                  "valor": "Batería baja o relé de arranque dañado",
+                  "es_diagnostico": true
+                }
+              ]
             },
             {
               "valor": "Gira pero no prende",
-              "hijos": [{ "valor": "Falta gasolina, carburador sucio o bujía", "es_diagnostico": true }]
+              "hijos": [
+                {
+                  "valor": "Falta gasolina, carburador sucio o bujía",
+                  "es_diagnostico": true
+                }
+              ]
             }
           ]
         },
         {
           "valor": "En movimiento",
-          "hijos": []
+          "hijos": [
+            {
+              "valor": "Siento que la moto brinca o me da tirones al acelerar",
+              "hijos": [
+                {
+                  "valor": "Cadena muy floja/desgastada, o problemas de suministro de gasolina (filtros sucios)",
+                  "es_diagnostico": true
+                }
+              ]
+            },
+            {
+              "valor": "Acelero a fondo pero la moto no avanza rápido (se siente amarrada)",
+              "hijos": [
+                {
+                  "valor": "El embrague (clutch) está patinando o el filtro de aire está completamente tapado",
+                  "es_diagnostico": true
+                }
+              ]
+            },
+            {
+              "valor": "Sale humo visible por el escape",
+              "hijos": [
+                {
+                  "valor": "Si es negro (exceso de gasolina). Si es azul (está quemando aceite de motor, requiere revisión urgente)",
+                  "es_diagnostico": true
+                }
+              ]
+            }
+          ]
         },
         {
           "valor": "Frenos y manejo",
-          "hijos": []
+          "hijos": [
+            {
+              "valor": "El manubrio me tiembla mucho",
+              "hijos": [
+                {
+                  "valor": "Llanta con baja presión, rin deformado o rodamientos (baleros) de la llanta desgastados",
+                  "es_diagnostico": true
+                }
+              ]
+            },
+            {
+              "valor": "Al frenar, la palanca o pedal se va hasta el fondo muy fácil",
+              "hijos": [
+                {
+                  "valor": "Fuga de líquido de frenos o pastillas completamente desgastadas. Peligro: No conducir",
+                  "es_diagnostico": true
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -36,30 +98,120 @@
       "hijos": [
         {
           "valor": "Al intentar encender",
-          "hijos": []
+          "hijos": [
+            {
+              "valor": "Giro la llave y no hace nada, ni las luces del tablero prenden",
+              "hijos": [
+                {
+                  "valor": "Batería totalmente muerta o terminales desconectadas/sulfatadas",
+                  "es_diagnostico": true
+                }
+              ]
+            },
+            {
+              "valor": "Hace un ruido de matraca ('clac-clac-clac') pero no prende",
+              "hijos": [
+                {
+                  "valor": "Batería con poca carga o marcha (motor de arranque) atascada",
+                  "es_diagnostico": true
+                }
+              ]
+            }
+          ]
         },
         {
           "valor": "Ruidos en movimiento",
-          "hijos": []
+          "hijos": [
+            {
+              "valor": "El volante me vibra mucho cuando voy rápido",
+              "hijos": [
+                {
+                  "valor": "Las llantas necesitan balanceo o hay un rin golpeado",
+                  "es_diagnostico": true
+                }
+              ]
+            },
+            {
+              "valor": "Al pasar por un bache o tope, suena un golpe seco abajo ('clonk')",
+              "hijos": [
+                {
+                  "valor": "Desgaste en la suspensión (amortiguadores, bujes o rótulas)",
+                  "es_diagnostico": true
+                }
+              ]
+            },
+            {
+              "valor": "Cuando me detengo en un semáforo, el asiento y el carro tiemblan mucho",
+              "hijos": [
+                {
+                  "valor": "Soportes del motor rotos o falla en una bujía que hace que el motor trabaje disparejo",
+                  "es_diagnostico": true
+                }
+              ]
+            },
+            {
+              "valor": "Huele a plástico quemado o a huevo podrido",
+              "hijos": [
+                {
+                  "valor": "Plástico/goma: Banda patinando o embrague quemándose. Huevo podrido: Convertidor catalítico fallando",
+                  "es_diagnostico": true
+                }
+              ]
+            }
+          ]
         },
         {
           "valor": "Luces del tablero",
-          "hijos": []
+          "hijos": [
+            {
+              "valor": "Prendió un ícono de un motor amarillo (Check Engine)",
+              "hijos": [
+                {
+                  "valor": "Falla electrónica detectada. Se necesita conectar un escáner (puede ser algo simple como el tapón de gasolina flojo, o un sensor dañado)",
+                  "es_diagnostico": true
+                }
+              ]
+            },
+            {
+              "valor": "La aguja de la temperatura subió mucho o prendió un ícono rojo de un termómetro",
+              "hijos": [
+                {
+                  "valor": "Sobrecalentamiento por falta de anticongelante o ventilador roto. Peligro: Apagar el motor de inmediato para evitar fundirlo",
+                  "es_diagnostico": true
+                }
+              ]
+            }
+          ]
         },
         {
           "valor": "Fugas en el piso",
           "hijos": [
             {
               "valor": "Mancha negra resbaladiza",
-              "hijos": [{ "valor": "Fuga de aceite de motor", "es_diagnostico": true }]
+              "hijos": [
+                {
+                  "valor": "Fuga de aceite de motor",
+                  "es_diagnostico": true
+                }
+              ]
             },
             {
               "valor": "Agua transparente sin olor",
-              "hijos": [{ "valor": "Normal: Condensación del Aire Acondicionado", "es_diagnostico": true }]
+              "hijos": [
+                {
+                  "valor": "Normal: Condensación del Aire Acondicionado",
+                  "es_diagnostico": true
+                }
+              ]
             },
             {
               "valor": "Mancha de color brillante",
-              "hijos": [{ "valor": "Fuga de anticongelante. ¡Riesgo de sobrecalentamiento!", "es_diagnostico": true }]
+              "hijos": [
+                {
+                  "valor": "Fuga de anticongelante. ¡Riesgo de sobrecalentamiento!",
+                  "es_diagnostico": true
+                }
+              ]
             }
           ]
         }
